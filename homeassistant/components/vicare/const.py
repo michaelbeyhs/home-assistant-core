@@ -3,7 +3,7 @@ import enum
 
 from homeassistant.const import Platform, UnitOfEnergy, UnitOfVolume
 
-DOMAIN = "vicare"
+DOMAIN = "vicare_beyhs"
 
 PLATFORMS = [
     Platform.BUTTON,
