@@ -92,7 +92,7 @@ def setup_vicare_api(hass: HomeAssistant, entry: ConfigEntry) -> None:
 
     # Currently we only support a single device
     device_list = vicare_api.devices
-    device = device_list[0]
+    device = device_list[1]
     hass.data[DOMAIN][entry.entry_id][VICARE_DEVICE_CONFIG_LIST] = device_list
     hass.data[DOMAIN][entry.entry_id][VICARE_DEVICE_CONFIG] = device
     hass.data[DOMAIN][entry.entry_id][VICARE_API] = getattr(
